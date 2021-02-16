@@ -9,8 +9,8 @@ def first(request):
 
 
 class Second(View):
-    def get(self, request):
-        return HttpResponse(self.output)
-
-    #books = Book.objects.all()
-    #output = f'We have {len(books)} books in our Database.'
+     def get(self, request):
+         return HttpResponse('Function inside class check')
+#
+#     books = Book.objects.all()
+#     output = f'We have {len(books)} books in our Database.'
