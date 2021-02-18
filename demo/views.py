@@ -5,7 +5,7 @@ from demo.models import Book
 
 
 def first(request):
-    return HttpResponse('Hello, world!')
+    return render(request, 'test.html', {'data': 'test data from views'})
 
 
 class Second(View):
